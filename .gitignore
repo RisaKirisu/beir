@@ -8,6 +8,8 @@ examples/**/models/
 examples/**/merged/
 examples/**/faiss-index/
 
+datasets/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

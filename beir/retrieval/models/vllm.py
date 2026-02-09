@@ -48,6 +48,7 @@ class VLLMEmbed:
         torch_dtype: str = "bfloat16",
         cache_dir: str = None,
         convert_to_numpy: bool = False,
+        enforce_eager: bool = True,
         **kwargs,
     ):
         self.sep = sep
@@ -72,7 +73,7 @@ class VLLMEmbed:
         # Create an LLM.
         self.model = LLM(
             model=model_path,
-            enforce_eager=True,
+            enforce_eager=enforce_eager,
             dtype=torch_dtype,
             enable_lora=True if self.lora_name_or_path else False,
             max_lora_rank=lora_r,

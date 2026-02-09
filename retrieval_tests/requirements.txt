@@ -4,5 +4,8 @@ tqdm == 4.67.3
 sentence-transformers == 5.2.2
 datasets == 4.5.0
 peft == 0.18.1
+faiss-cpu == 1.13.2
+pytrec-eval==0.5
+
 ipykernel
 ipywidgets
